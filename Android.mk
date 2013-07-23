@@ -237,7 +237,7 @@ endif
 
 # including the optimized assembly code for the src-overing operation
 ifeq ($(TARGET_ARCH),arm)
-	LOCAL_CFLAGS += -D__CPU_ARCH_ARM -O3
+	LOCAL_CFLAGS += -D__CPU_ARCH_ARM
 	LOCAL_SRC_FILES += \
 		src/opts/S32A_D565_Opaque_arm.S \
 		src/opts/S32A_Opaque_BlitRow32_arm.S \
